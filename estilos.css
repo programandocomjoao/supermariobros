@@ -84,7 +84,7 @@
 .botao {
 	position: absolute;
   /* top: 35%; */
-  right: 0;
+  right: 10px;
   width: 100px;
   z-index: 1;
 }
@@ -92,7 +92,7 @@
 .reset {
 	position: absolute;
   /*top: 10px;*/
-  left: 0;
+  left: 10px;
   width: 100px;
   z-index: 1;
 }
