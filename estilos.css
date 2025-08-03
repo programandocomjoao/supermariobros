@@ -96,3 +96,11 @@
   width: 100px;
   z-index: 1;
 }
+
+.gameover {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  width: 80%;
+  /*visibility: hidden;*/
+}
