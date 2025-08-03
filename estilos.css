@@ -6,8 +6,8 @@
 
 .game-board {
 	width: 100%;
-	height: 100vh;
-	border-bottom: green 130px solid;
+	height: 70vh;
+	border-bottom: green 30px solid;
 	margin:  0 auto;
 	position: relative;
 	overflow: hidden;
@@ -81,9 +81,16 @@
 
 .botao {
 	position: absolute;
-  top: 35%;
+  /* top: 35%; */
   right: 0;
   width: 100px;
-  text-align: center;
+  z-index: 1;
+}
+
+.reset {
+	position: absolute;
+  /*top: 10px;*/
+  left: 0;
+  width: 100px;
   z-index: 1;
 }
