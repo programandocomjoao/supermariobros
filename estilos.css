@@ -77,8 +77,13 @@
 	to {
 		right:  100%;
 	}
-
 }
 
-
-
+.botao {
+	position: absolute;
+  top: 35%;
+  right: 0;
+  width: 100px;
+  text-align: center;
+  z-index: 1;
+}
