@@ -1,106 +1,74 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.game-board {
-	width: 100%;
-	/*height: 70vh;*/
+div#tela {
+  width: 100%;
   height: 500px;
-	border-bottom: green 30px solid;
-	margin:  0 auto;
-	position: relative;
-	overflow: hidden;
-	background: linear-gradient(#87CEEB, #E0F6FF);
+  background: linear-gradient(#87ceeb, #e0f6ff);
+  border-bottom: green 30px solid;
+  position: relative;
+  overflow: hidden;
 }
 
-.pipe {
-	position: absolute;
-	bottom: 0;
-	width: 40px;
-	animation: pipe-animation 1s infinite linear;
-}
-
-@keyframes pipe-animation {
-	from {
-		right: -40px;
-	}
-
-	to {
-		right:  100%;
-	}
-}
-
-.mario {
-	width: 75px;
-	position: absolute;
-	bottom: 0;
-}
-
-.jump {
-	animation: jump 500ms ease-out;
-}
-
-@keyframes jump {
-	0% {
-		bottom: 0;
-	}
-
-	40% {
-		bottom: 180px;
-	}
-
-	50% {
-		bottom: 180px;
-	}
-
-	60% {
-		bottom: 180px;
-	}
-
-	100% {
-		bottom: 0;
-	}
-}
-
-.clouds {
-	width: 275px;
-	position: absolute;
-  top: 25px;
-	animation: clouds-animation 20s infinite linear;
-}
-
-@keyframes clouds-animation {
-	from {
-		right: -275px;
-	}
-
-	to {
-		right:  100%;
-	}
-}
-
-.botao {
-	position: absolute;
-  /* top: 35%; */
-  right: 10px;
-  width: 100px;
-  z-index: 1;
-}
-
-.reset {
-	position: absolute;
-  /*top: 10px;*/
-  left: 10px;
-  width: 100px;
-  z-index: 1;
-}
-
-.gameover {
+img.cano {
   position: absolute;
-  bottom: 50%;
+  bottom: 0;
+  width: 40px;
+  animation: animaCano 1s infinite linear;
+}
+
+@keyframes animaCano {
+  from { right: -40px; }
+  to { right: 100%; }
+}
+
+img.mario {
+  position: absolute;
+  bottom: 0;
+  width: 75px;
+}
+
+.pulo {
+  animation: animaMario 500ms;
+}
+
+@keyframes animaMario {
+  0% { bottom: 0; }
+  50% { bottom: 180px; }
+  100% { bottom: 0; }
+}
+
+img.nuvens {
+  position: absolute;
+  top: 25px;
+  width: 275px;
+  animation: animaNuvens 20s infinite linear;
+}
+
+@keyframes animaNuvens {
+  from { right: -275px; }
+  to { right: 100%; }
+}
+
+img.gameover {
+  position: absolute;
   left: 10%;
+  bottom: 50%;
   width: 80%;
   visibility: hidden;
+}
+
+img.cima {
+  position: absolute;
+  right: 10px;
+  width: 100px;
+}
+
+img.reset {
+  position: absolute;
+  left: 10px;
+  width: 100px;
 }
